@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Números</title>
+    <script>
+  //function contarNumeros() {
+  // Defina o intervalo
+//const inicio = 1;
+ //const fim = 10;
+ const inicio= prompt('Insira o primeiro número da sequência:');
+ const fim= prompt('Insira o último número da sequência:')
+
+
+ // Variável para armazenar a quantidade de números ímpares
+ let quantidadeImpares = 0;
+
+ // Laço for para iterar pelos números no intervalo
+for (let i = inicio; i <= fim; i++) {
+// Exiba o número atual
+//alert(`Número: ${i}`);
+
+// Verifique se o número é ímpar
+// % significa resto da divisão
+if (i % 2 !== 0) {
+ quantidadeImpares++;
+ }
+} // Exiba a quantidade total de números ímpares 
+alert(`Quantidade total de números ímpares entre ${inicio} e ${fim}: ${quantidadeImpares}`);
+      
+    </script>
+</head>
+<body>
+   <!--<button onclick="contarNumeros()">Contar Números</button> ----->
+</body>
+</html>
